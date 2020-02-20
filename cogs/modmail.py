@@ -41,7 +41,7 @@ class Modmail(commands.Cog):
 
         if ctx.guild != self.bot.modmail_guild:
             return await ctx.send(
-                f"You can only setup in the Modmail guild: {self.bot.modmail_guild}."
+                f"You can only setup in the BloxTech guild: {self.bot.modmail_guild}."
             )
 
         if self.bot.main_category is not None:
@@ -96,10 +96,8 @@ class Modmail(commands.Cog):
         )
 
         embed.add_field(
-            name="Thanks for using our bot!",
-            value="If you like what you see, consider giving the "
-            "[repo a star](https://github.com/kyb3r/modmail) :star: and if you are "
-            "feeling extra generous, buy us coffee on [Patreon](https://patreon.com/kyber) :heart:!",
+            name="Thank you for your purchase!",
+            value="Thank you for using the BloxTech ModMail bot!",
         )
 
         embed.set_footer(text=f'Type "{self.bot.prefix}help" for a complete list of commands.')
@@ -112,7 +110,7 @@ class Modmail(commands.Cog):
         await ctx.send(
             "**Successfully set up server.**\n"
             "Consider setting permission levels to give access to roles "
-            "or users the ability to use Modmail.\n\n"
+            "or users the ability to use your support bot.\n\n"
             f"Type:\n- `{self.bot.prefix}permissions` and `{self.bot.prefix}permissions add` "
             "for more info on setting permissions.\n"
             f"- `{self.bot.prefix}config help` for a list of available customizations."
